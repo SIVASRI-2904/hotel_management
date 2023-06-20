@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+<style> 
+label {
+  width: 240px;
+  display: inline-block;
+}
+</style>
+ </head>
+    <body>
+        <form method="POST" action="confirmation.php" >
+<P>
+<label for="customer id">CUSTOMER ID:</label>
+<input type="text" name="id"></P>  
+ <P><label for="number of persons">NUMBER OF PERSONS:</label><input type="number" name="Quantity" class="input-responsive" value="0" required>  </P>
+        <p>
+     <label for="check_in date">CHECK_IN</label>
+     <input type="date" name="inDate" id="inDate">
+      </p>
+       <p>
+     <label for="check_out date">CHECK_OUT</label>
+     <input type="date" name="outDate" id="outDate">
+      </p>
+<p><label for="payment method">PAYMENT METHOD:</label>
+            <select type="text" name="paym">
+                <option>COD</option>
+                <option>Net Banking</option>
+                <option>PAYTM</option>
+                <option>GPAY</option>
+                <option>Paypal</option>
+                <option>BHIM</option>
+            </select></p>
+  <h3>Select the room type</h3>
+        <p><label for="room type">ROOM TYPE:</label>
+            <select type="text" name="rtype">
+                <option>SINGLE</option>
+                <option>DOUBLE</option>
+                <option>TRIPLE</option>
+                <option>QUAD</option>
+                <option>CONNECTING ROOM</option>
+                <option>EXECUTIVE SUITE</option>
+                <option>MINI SUITE</option>
+             </select></p>
+ <P><label for="number of rooms">NUMBER OF ROOMS:</label><input type="number" name="nroom" class="input-responsive" value="0" required>  </P>
+  <label for="cost">COST:</label>
+  <select name="cost" id="cost">
+    <optgroup label="SINGLE">
+      <option value="5000">5000.0</option>
+</optgroup>
+<optgroup label="DOUBLE">
+      <option value="7000">7000.0</option>
+    </optgroup>
+<optgroup label="TRIPLE">
+<option value="8000">8000.0</option>
+</optgroup>
+    <optgroup label="QUAD">
+      <option value="9000">9000.0</option>
+    </optgroup>
+ <optgroup label="CONNECTING ROOM">
+      <option value="10000">10000.0</option>
+    </optgroup>
+ <optgroup label="EXECUTIVE SUITE">
+      <option value="20000">20000.0</option>
+    </optgroup>
+ <optgroup label="MINI SUITE">
+      <option value="15000">15000.0</option>
+    </optgroup>
+  </select>
+<br>
+<br>
+<input type="submit" name="save" value="CONFIRM">
+        <br>
+    </form>
+    </body> 
+</html>
